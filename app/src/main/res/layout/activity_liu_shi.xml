@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LiuShiActivity">
+
+    <include layout="@layout/sousuo_item"
+        android:id="@+id/sou_title"/>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/shopp_liushi"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sou_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flChildSpacing="7dp"
+        app:flRowSpacing="8dp">
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+</RelativeLayout>

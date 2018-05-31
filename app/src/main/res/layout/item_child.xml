@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/child_box"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/child_img"
+        android:layout_width="@dimen/margin70"
+        android:layout_height="@dimen/margin70" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/child_title"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/child_price"
+                android:textColor="#ff0000"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <wby.laowang.monthshopp.custom.AddSubView
+                android:id="@+id/addsub"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/margin30">
+
+            </wby.laowang.monthshopp.custom.AddSubView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/child_delete"
+        android:text="删除"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="7dp"
+        android:background="#ff0000"
+        android:layout_width="@dimen/margin50"
+        android:layout_height="@dimen/margin70" />
+</LinearLayout>

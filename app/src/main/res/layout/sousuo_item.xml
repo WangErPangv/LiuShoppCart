@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sou_finish"
+        android:src="@drawable/leftjiantou"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/sou_shape"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:src="@drawable/a_4"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <EditText
+            android:id="@+id/sou_edtext"
+            android:hint="请输入内容进行搜索"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sou_text"
+        android:text="搜索"
+        android:textSize="17sp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
